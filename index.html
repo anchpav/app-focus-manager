@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<title>App Focus Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>App Focus Manager</h1>
+
+<h2>Select apps to block</h2>
+
+<div id="apps">
+
+<label><input type="checkbox" value="Instagram"> Instagram</label>
+<label><input type="checkbox" value="TikTok"> TikTok</label>
+<label><input type="checkbox" value="YouTube"> YouTube</label>
+<label><input type="checkbox" value="Telegram"> Telegram</label>
+
+</div>
+
+<button onclick="saveApps()">Save selection</button>
+
+<h2>Focus timer</h2>
+
+<input id="minutes" type="number" placeholder="minutes">
+
+<button onclick="startTimer()">Start Focus</button>
+
+<h3 id="timer"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>
