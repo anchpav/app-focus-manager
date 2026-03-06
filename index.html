@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <link rel="manifest" href="manifest.json">
-<meta charset="UTF-8">
-<title>App Focus Manager</title>
+
+<title>FocusGuard</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,30 +11,32 @@
 
 <body>
 
-<h1>App Focus Manager</h1>
+<div class="container">
 
-<h2>Select apps to block</h2>
+<h1>FocusGuard</h1>
 
-<div id="apps">
+<h2>Select distracting apps</h2>
 
-<label><input type="checkbox" value="Instagram"> Instagram</label>
-<label><input type="checkbox" value="TikTok"> TikTok</label>
-<label><input type="checkbox" value="YouTube"> YouTube</label>
-<label><input type="checkbox" value="Telegram"> Telegram</label>
+<div id="apps"></div>
 
-</div>
+<button id="save">Save Apps</button>
 
-<button onclick="saveApps()">Save selection</button>
-
-<h2>Focus timer</h2>
+<h2>Focus Timer</h2>
 
 <input id="minutes" type="number" placeholder="minutes">
 
-<button onclick="startTimer()">Start Focus</button>
+<button id="start">Start Focus</button>
 
-<h3 id="timer"></h3>
+<div id="timer"></div>
 
-<script src="script.js"></script>
+<h2>Statistics</h2>
+
+<div id="stats"></div>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
+
 </html>
